@@ -1,0 +1,37 @@
+{
+  "name": "chart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src --fix",
+    "lint-staged": "lint-staged",
+    "prettier": "prettier --write src/**/*",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hzzlyxx/chart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hzzlyxx/chart/issues"
+  },
+  "homepage": "https://github.com/hzzlyxx/chart#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@hzzlyxx/eslint-config-ts": "^1.2.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "prettier --write",
+      "npm run lint"
+    ]
+  }
+}
