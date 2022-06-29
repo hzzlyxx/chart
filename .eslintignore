@@ -1,0 +1,21 @@
+# node_modules
+node_modules
+
+# lib
+lib
+
+# dist
+dist
+
+# example
+example
+
+# public
+public
+
+**/*.md
+**/*.html
+**/*.svg
+
+# d.ts
+*.d.ts
