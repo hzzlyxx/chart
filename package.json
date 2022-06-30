@@ -1,8 +1,15 @@
 {
-  "name": "chart",
+  "name": "@hzzlyxx/chart",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "author": "hzzly",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "ci": "run-s lint build",
     "build": "npm run clean && tsc",
@@ -16,8 +23,6 @@
     "type": "git",
     "url": "git+https://github.com/hzzlyxx/chart.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/hzzlyxx/chart/issues"
   },
@@ -25,7 +30,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
-    "@hzzlyxx/eslint-config-ts": "^1.2.0",
+    "@hzzlyxx/eslint-config-ts": "^1.2.2",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
     "npm-run-all": "^4.1.5",
